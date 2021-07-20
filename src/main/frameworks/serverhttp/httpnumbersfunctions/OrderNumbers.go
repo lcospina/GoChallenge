@@ -1,4 +1,4 @@
-package numbersfunctions
+package httpnumbersfunctions
 
 import (
 	"github.com/gin-gonic/gin"

@@ -14,4 +14,6 @@ type UserRepository interface {
 	SelectFindId(user models.User) models.User
 
 	GetAll() []models.User
+
+	CreateSeedsUsers()
 }
