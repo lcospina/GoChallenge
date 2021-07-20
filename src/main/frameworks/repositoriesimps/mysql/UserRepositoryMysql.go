@@ -40,6 +40,7 @@ func (this UserRepositoryMysql) GetAll() []models.User {
 }
 
 func (this UserRepositoryMysql) Update(user models.User) bool {
+	//ESTE METODO ES PROPIO DE LA CLASE PERO NO SE IMPLEMENTA POR QUE NO ES NECESARIO PARA LA PRUEBA...
 	return true
 }
 
