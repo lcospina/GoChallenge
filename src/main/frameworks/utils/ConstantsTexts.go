@@ -20,3 +20,5 @@ var USER_SEEDS_CREATE_NOOK = "Error al crear los usuarios de prueba"
 var USER_FIND_NOOK = "Usuario no encontrado"
 
 var SERVER_ERROR_INTERNAL = "Contactar al proveedor del servicio"
+
+var SERVER_ERROR_INIT = "Error al iniciar el servicio"

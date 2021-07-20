@@ -1,4 +1,4 @@
-package userusecases
+package users
 
 import (
 	"GoChallenge/src/domains/models"
