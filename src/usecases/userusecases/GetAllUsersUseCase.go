@@ -5,6 +5,6 @@ import (
 	"GoChallenge/src/usecases/repositories"
 )
 
-func GetAllUsers(userRepository repositories.UserRepository) []models.User {
+func GetAllUsersUseCase(userRepository repositories.UserRepository) []models.User {
 	return userRepository.GetAll()
 }

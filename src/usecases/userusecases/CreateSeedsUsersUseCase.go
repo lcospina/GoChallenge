@@ -4,6 +4,6 @@ import (
 	"GoChallenge/src/usecases/repositories"
 )
 
-func CreateSeedsUsers(userRepository repositories.UserRepository) {
+func CreateSeedsUsersUseCase(userRepository repositories.UserRepository) {
 	userRepository.CreateSeedsUsers()
 }

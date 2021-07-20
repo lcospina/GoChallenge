@@ -11,5 +11,7 @@ func InitServer(port string) {
 	router.GET(ROUTE_GET_ALL_USERS, httpuserfunctions.GetAllUsers)
 	router.GET(ROUTE_DELETE_USERS, httpuserfunctions.DeleteUser)
 	router.GET(ROUTE_ORDER_NUMBERS, httpnumbersfunctions.OrderNumbers)
+	router.POST(ROUTE_CREATE_USERS, httpuserfunctions.CreateUser)
+	router.GET(ROUTE_CREATE_SEEDSDB, httpuserfunctions.CreateSeedsDB)
 	router.Run(":" + port)
 }
