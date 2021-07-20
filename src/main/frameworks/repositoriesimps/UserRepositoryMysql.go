@@ -35,7 +35,7 @@ func (this UserRepositoryMysql) Insert(user models.User) bool {
 func (this UserRepositoryMysql) GetAll() []models.User {
 	var db = this.ConnectGORM()
 	var users []models.User
-	db.Find(&users)
+	db.Model(&models.User{}).Preload("Role").Find(&users)
 	return users
 }
 
@@ -44,7 +44,14 @@ func (this UserRepositoryMysql) Update(user models.User) bool {
 }
 
 func (this UserRepositoryMysql) Delete(user models.User) bool {
-	return true
+	var db = this.ConnectGORM()
+	result := db.Delete(&user)
+	if result.Error == nil {
+		return true
+	} else {
+		return false
+	}
+
 }
 
 func (this UserRepositoryMysql) SelectFindId(user models.User) models.User {

@@ -13,6 +13,4 @@ type User struct {
 	RoleID      int
 	Role        Role
 	CreatedAt   time.Time
-	DeleteAt    time.Time
-	UpdateAt    time.Time
 }
