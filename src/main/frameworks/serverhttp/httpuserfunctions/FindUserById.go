@@ -10,23 +10,24 @@ import (
 	"strconv"
 )
 
-func DeleteUser(c *gin.Context) {
+func FindUserById(c *gin.Context) {
 	id := c.Param("id")
 	idInt, err := strconv.Atoi(id)
 	if err != nil {
 		c.String(http.StatusOK, utils.USER_IVALID)
 	} else {
 		var repositoryImp = dependencyinjection.GetUserRepositoryImp()
-		resp := userusecases.DeleteUserUseCase(repositoryImp, models.User{ID: idInt})
-		if resp {
+		userTemp := userusecases.FindByIdUserUseCase(repositoryImp, models.User{ID: idInt})
+
+		if userTemp.ID != 0 {
 			c.JSON(http.StatusOK, gin.H{
 				utils.RESPONSE: utils.OK,
-				utils.DATA:     utils.USER_DELETE_OK,
+				utils.DATA:     userTemp,
 			})
 		} else {
 			c.JSON(http.StatusOK, gin.H{
 				utils.RESPONSE: utils.ERROR,
-				utils.DATA:     utils.USER_DELETE_NOOK,
+				utils.DATA:     utils.USER_FIND_NOOK,
 			})
 		}
 	}

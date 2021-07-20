@@ -15,9 +15,15 @@ func CreateUser(c *gin.Context) {
 	var repositoryImp = dependencyinjection.GetUserRepositoryImp()
 	resp := userusecases.InsertUserUseCase(repositoryImp, user)
 	if resp {
-		c.JSON(http.StatusOK, utils.USER_CREATE_OK)
+		c.JSON(http.StatusOK, gin.H{
+			utils.RESPONSE: utils.OK,
+			utils.DATA:     utils.USER_CREATE_OK,
+		})
 	} else {
-		c.JSON(http.StatusOK, utils.USER_CREATE_NOOK)
+		c.JSON(http.StatusOK, gin.H{
+			utils.RESPONSE: utils.ERROR,
+			utils.DATA:     utils.USER_CREATE_NOOK,
+		})
 	}
 
 }

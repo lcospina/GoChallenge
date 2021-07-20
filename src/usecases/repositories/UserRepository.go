@@ -11,9 +11,9 @@ type UserRepository interface {
 
 	Delete(user models.User) bool
 
-	SelectFindId(user models.User) models.User
+	FindByIdUserUseCase(user models.User) models.User
 
 	GetAll() []models.User
 
-	CreateSeedsUsers()
+	CreateSeedsUsers() bool
 }

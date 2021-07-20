@@ -1,8 +1,6 @@
 package main
 
-import (
-	"GoChallenge/src/main/frameworks/serverhttp"
-)
+import "GoChallenge/src/main/frameworks/serverhttp"
 
 func main() {
 	serverhttp.InitServer("9090")
