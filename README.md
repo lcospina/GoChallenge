@@ -12,10 +12,12 @@ go get -u github.com/gin-gonic/gin
 
 Servicios Disponibles
 
-POST
-http://localhost:9090/Numbers/orderNumbers
+Primer punto
 
-curl -X POST http://localhost:9090/Numbers/orderNumbers -H "Content-Type: application/json" -d "{ \"unsorted\": [3,3,3,3,3,5,5,6,8,3,20,4,4,7,7,1,1,2,20,20] }”
+        POST
+        http://localhost:9090/Numbers/orderNumbers
+
+        curl -X POST http://localhost:9090/Numbers/orderNumbers -H "Content-Type: application/json" -d "{ \"unsorted\": [3,3,3,3,3,5,5,6,8,3,20,4,4,7,7,1,1,2,20,20] }”
 
 
 GET
