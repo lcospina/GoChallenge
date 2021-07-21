@@ -14,9 +14,8 @@ Servicios Disponibles
 
 Primer punto
 
-        POST
-        http://localhost:9090/Numbers/orderNumbers
-
+POST
+http://localhost:9090/Numbers/orderNumbers
         curl -X POST http://localhost:9090/Numbers/orderNumbers -H "Content-Type: application/json" -d "{ \"unsorted\": [3,3,3,3,3,5,5,6,8,3,20,4,4,7,7,1,1,2,20,20] }”
 
 
@@ -34,8 +33,7 @@ http://localhost:9090/Users/deleteUser/:id
 
 POST
 http://localhost:9090/Users/createUser
-
-curl -X POST http://localhost:9090/Users/createUser -H "Content-Type: application/json" --data-binary @- <<DATA
+        curl -X POST http://localhost:9090/Users/createUser -H "Content-Type: application/json" --data-binary @- <<DATA
 {
 "FirstName": "Pedro",
 "LastName": "Perez",
