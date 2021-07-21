@@ -36,17 +36,4 @@ POST
 http://localhost:9090/Users/createUser
 
         curl -X POST http://localhost:9090/Users/createUser -H "Content-Type: application/json" --data-binary @- <<DATA
-{
-"FirstName": "Pedro",
-"LastName": "Perez",
-"Email": "pp@gmail.com",
-"NumberPhone": "3207767839",
-"RoleID": 2,
-"Role": {
-"ID": 2,
-"Description": "Cliente",
-"CreatedAt": "2021-07-20T18:43:46.193Z"
-},
-"CreatedAt": "2021-07-20T18:43:46.194Z"
-}
-DATA
+        {"FirstName": "Pedro", "LastName": "Perez", "Email": "pp@gmail.com", "NumberPhone": "3207767839", "RoleID": 2, "Role": {"ID": 2, "Description": "Cliente", "CreatedAt": "2021-07-20T18:43:46.193Z"},"CreatedAt": "2021-07-20T18:43:46.194Z"} DATA
