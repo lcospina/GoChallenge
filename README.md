@@ -14,7 +14,7 @@ Servicios Disponibles
 
 
 
-# Primer Puntto
+# End Point Primer Puntto
 
 POST
 http://localhost:9090/Numbers/orderNumbers
@@ -23,13 +23,17 @@ http://localhost:9090/Numbers/orderNumbers
 
 
 
-# Segundo Punto
-
-GET
-http://localhost:9090/Users/createSeedsDB
+# End Point Segundo Punto
 
 GET
 http://localhost:9090/Users/getAllUsers
+
+        curl -X GET http://localhost:9090/Users/getAllUsers 
+        
+# End Point Adicionales Del Segundo Punto
+
+GET
+http://localhost:9090/Users/createSeedsDB
 
 GET
 http://localhost:9090/Users/findById/:id
