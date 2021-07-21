@@ -14,7 +14,10 @@ func FindUserById(c *gin.Context) {
 	id := c.Param("id")
 	idInt, err := strconv.Atoi(id)
 	if err != nil {
-		c.String(http.StatusOK, utils.USER_IVALID)
+		c.JSON(http.StatusOK, gin.H{
+			utils.RESPONSE: utils.ERROR,
+			utils.DATA:     utils.USER_IVALID,
+		})
 	} else {
 		var repositoryImp = dependencyinjection.GetUserRepositoryImp()
 		userTemp := users.FindByIdUserUseCase(repositoryImp, models.User{ID: idInt})
