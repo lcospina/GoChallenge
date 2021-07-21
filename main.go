@@ -1,7 +1,7 @@
 package main
 
-import "GoChallenge/src/frameworklayer/serverhttp"
+import "GoChallenge/src/framework_layer/server_http"
 
 func main() {
-	serverhttp.InitServer("9090")
+	server_http.InitServer("9090")
 }
