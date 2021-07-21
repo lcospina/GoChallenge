@@ -1,8 +1,8 @@
 package dependencyinjection
 
 import (
-	local "GoChallenge/src/main/frameworks/repositoriesimps/local"
-	mysql "GoChallenge/src/main/frameworks/repositoriesimps/mysql"
+	"GoChallenge/src/main/frameworks/repositoriesimps/local"
+	"GoChallenge/src/main/frameworks/repositoriesimps/mysql"
 	"GoChallenge/src/usecases/repositories"
 )
 
