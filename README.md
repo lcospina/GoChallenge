@@ -1,20 +1,27 @@
 # GoChallenge
 
-Dependencias requeridas
+# Paso 1 - Clonar el repositorio
 
-go get -u github.com/go-sql-driver/mysql
+        https://github.com/lcospina/GoChallenge.git
 
-go get -u gorm.io/gorm
+# Paso 2 - Instalar dependencias requeridas
 
-go get -u gorm.io/driver/mysql
+        go get -u github.com/go-sql-driver/mysql
 
-go get -u github.com/gin-gonic/gin
+        go get -u gorm.io/gorm
 
-Servicios Disponibles
+        go get -u gorm.io/driver/mysql
+
+        go get -u github.com/gin-gonic/gin
+
+# Paso 3 - Ejecutar el main
+
+Se debe ingresar a la carpeta raiz del proyecto clonado y ejecutar el siguiente comando
+        
+        go run main.go
 
 
-
-# End Point Primer Punto
+# Paso 4 - End Point primer punto
 
 POST
 http://localhost:9090/Numbers/orderNumbers
@@ -23,14 +30,14 @@ http://localhost:9090/Numbers/orderNumbers
 
 
 
-# End Point Segundo Punto
+# Paso 5 - End Point segundo punto
 
 GET
 http://localhost:9090/Users/getAllUsers
 
         curl -X GET http://localhost:9090/Users/getAllUsers 
         
-# End Points Adicionales Del Segundo Punto
+# Paso 6 - End Points adicionales al segundo punto
 
 GET
 http://localhost:9090/Users/createSeedsDB
