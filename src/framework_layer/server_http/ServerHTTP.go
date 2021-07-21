@@ -9,6 +9,7 @@ import (
 )
 
 func InitServer(port string) {
+	gin.SetMode(gin.ReleaseMode)
 	router := gin.Default()
 	router.Use(middleware)
 	router.GET(ROUTE_GET_ALL_USERS, http_user_functions.GetAllUsers)
