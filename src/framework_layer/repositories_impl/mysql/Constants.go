@@ -1,3 +1,3 @@
 package mysql
 
-const DSNMYSQL = "jikkosoft:aYyigbNAs12YozoB@tcp(localhost:3306)/DBJikkosoft?parseTime=true"
+const DSNMYSQL = "YqVDIko5Db:ASYbSYnDlP@tcp(remotemysql.com:3306)/YqVDIko5Db?parseTime=true"
