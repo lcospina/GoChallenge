@@ -30,7 +30,7 @@ http://localhost:9090/Users/getAllUsers
 
         curl -X GET http://localhost:9090/Users/getAllUsers 
         
-# End Point Adicionales Del Segundo Punto
+# End Points Adicionales Del Segundo Punto
 
 GET
 http://localhost:9090/Users/createSeedsDB
