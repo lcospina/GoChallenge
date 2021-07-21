@@ -12,7 +12,7 @@ func (this NumbersRepositoryLocal) OrderNumbers(numbers models.Numbers) models.N
 	numbers.Sorted = append(numbers.Sorted)
 	arrayNew := make([]int, len(numbers.Unsorted))
 	copy(arrayNew, numbers.Unsorted)
-	numbers.Sorted = moveItemsToTheEnd(order(arrayNew))
+	numbers.Sorted = moveItemsRepetToTheEnd(order(arrayNew))
 	return numbers
 }
 
@@ -31,7 +31,7 @@ func order(input []int) []int {
 	return input
 }
 
-func moveItemsToTheEnd(input []int) []int {
+func moveItemsRepetToTheEnd(input []int) []int {
 	n := len(input)
 	contChanges := 0
 	for i := 0; i < n-1; i++ {
