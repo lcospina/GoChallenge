@@ -14,7 +14,7 @@ Servicios Disponibles
 
 
 
-Primer punto
+# Primer Puntto
 
 POST
 http://localhost:9090/Numbers/orderNumbers
@@ -23,7 +23,7 @@ http://localhost:9090/Numbers/orderNumbers
 
 
 
-Segundo punto
+# Segundo Punto
 
 GET
 http://localhost:9090/Users/createSeedsDB
