@@ -26,7 +26,6 @@ http://localhost:9090/Users/deleteUser/:id
 
 POST
 http://localhost:9090/Users/createUser
-
 curl -X POST http://localhost:9090/Users/createUser -H "Content-Type: application/json" --data-binary @- <<DATA
 {
 "FirstName": "Pedro",
