@@ -2,7 +2,6 @@ package local
 
 import (
 	"GoChallenge/src/domain_layer/models"
-	"fmt"
 	_ "github.com/go-sql-driver/mysql"
 )
 
@@ -33,7 +32,6 @@ func order(input []int) []int {
 }
 
 func moveItemsToTheEnd(input []int) []int {
-	fmt.Println(input)
 	n := len(input)
 	contChanges := 0
 	for i := 0; i < n-1; i++ {
@@ -44,7 +42,6 @@ func moveItemsToTheEnd(input []int) []int {
 					input[j] = input[j+1]
 				}
 				input[n-1] = repeated
-				fmt.Println(input)
 				contChanges++
 				i--
 			}
