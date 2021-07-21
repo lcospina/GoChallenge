@@ -32,6 +32,12 @@ http://localhost:9090/Numbers/orderNumbers
 
 # Paso 5 - End Point segundo punto
 
+
+GET
+http://localhost:9090/Users/findById/:id
+        
+        curl -X GET http://localhost:9090/Users/findById/1 
+
 GET
 http://localhost:9090/Users/getAllUsers
 
@@ -41,9 +47,6 @@ http://localhost:9090/Users/getAllUsers
 
 GET
 http://localhost:9090/Users/createSeedsDB
-
-GET
-http://localhost:9090/Users/findById/:id
 
 DELETE
 http://localhost:9090/Users/deleteUser/:id
